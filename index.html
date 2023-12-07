@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcTiga</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="image/favicon.gif" />
+  </head>
+  <body>
+    <header>
+      <!-- Pembukaan -->
+      <nav class="welcome">
+        <h2>Welcome to CalcTiga</h2>
+        <p>CalcTiga adalah kalkulator berbasis Web Apps untuk membantu User menghitung Luas Segitiga & Keliling Segitiga gratis. Silahkan masukkan angka anda di kotak bawah untuk mencobanya.</p>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Halaman Utama -->
+      <div class="main-page">
+        <!-- Container Luas Segitiga -->
+        <section class="segitiga">
+          <!-- title -->
+          <article class="judul-segitiga">
+            <h3>Luas Segitiga</h3>
+          </article>
+
+          <div class="content-segitiga">
+            <!-- Gambar -->
+            <figure class="gbr-segitiga">
+              <img src="image/segitiga.png" height="200px" alt="SegiTiga.png" />
+            </figure>
+
+            <!-- Rumus luas segitiga -->
+            <article class="rumus-segitiga">
+              <h4>Rumus Luas Segitiga:</h4>
+              <p>L = ½ x a x T</p>
+              <br />
+
+              <h4>Keterangan Rumus:</h4>
+              <p>L = Luas segitiga</p>
+              <p>a = Alas segitiga</p>
+              <p>T = Tinggi segitiga</p>
+            </article>
+          </div>
+
+          <!-- User Input Luas Segitiga -->
+          <form>
+            <fieldset id="fitur-luas-segitiga">
+              <legend>Hitung Luas Segitiga</legend>
+              <label for="alas">Masukkan Angka anda di kotak bawah ini</label><br />
+
+              <label for="alas">L = ½ x</label>
+              <input type="number" min="1" id="alas" name="alas" placeholder="Nilai Alas" />
+              <label for="tinggi"> x </label>
+              <input type="number" min="1" id="tinggi" name="tinggi" placeholder="Nilai Tinggi" /><br />
+
+              <button class="hitung-segitiga" id="hitung-luas">Hitung</button>
+              <button class="reset-segitiga" type="reset" id="reset-luas">Reset</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <!-- Container Keliling Segitiga -->
+        <section class="segitiga">
+          <!-- title -->
+          <article class="judul-segitiga">
+            <h3>Keliling Segitiga</h3>
+          </article>
+
+          <div class="content-segitiga">
+            <!-- Gambar -->
+            <figure class="gbr-segitiga">
+              <img src="image/segitiga.png" height="200px" alt="SegiTiga.png" />
+            </figure>
+
+            <!-- Rumus Keliling segitiga -->
+            <article class="rumus-segitiga">
+              <h4>Rumus Keliling Segitiga:</h4>
+              <p>K = A + B + C</p>
+              <br />
+
+              <h4>Keterangan Rumus:</h4>
+              <p>A = Sisi Segitiga ke-1</p>
+              <p>B = Sisi Segitiga ke-2</p>
+              <p>C = Sisi Segitiga ke-3</p>
+            </article>
+          </div>
+
+          <!-- User Input Keliling Segitiga -->
+          <form>
+            <fieldset id="fitur-keliling-segitiga">
+              <legend>Hitung Keliling Segitiga</legend>
+              <label for="sisi1">Masukkan Angka anda di kotak bawah ini</label><br />
+
+              <label for="sisi1">K = </label>
+              <input type="number" min="1" class="sisi-keliling" id="sisi1" name="sisi1" placeholder="Sisi ke-1" />
+              <label for="sisi2"> + </label>
+              <input type="number" min="1" class="sisi-keliling" id="sisi2" name="sisi2" placeholder="Sisi ke-2" />
+              <label for="sisi3"> + </label>
+              <input type="number" min="1" class="sisi-keliling" id="sisi3" name="sisi3" placeholder="Sisi ke-3" /><br />
+
+              <button class="hitung-segitiga" id="hitung-keliling">Hitung</button>
+              <button class="reset-segitiga" type="reset" id="reset-keliling">Reset</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

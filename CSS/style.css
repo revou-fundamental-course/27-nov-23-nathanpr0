@@ -1,0 +1,333 @@
+:root {
+  /* background */
+  --bg: linear-gradient(to top, #70c5e6 77vh, #1a8bb8 23vh);
+  --bg_res1: linear-gradient(to top, #70c5e6 75vh, #1a8bb8 25vh);
+  --bg_res2: linear-gradient(to top, #70c5e6 70vh, #1a8bb8 30vh);
+
+  /* color */
+  --color1: #128ec0;
+  --color2: #84cdea;
+  --color3: #b2e0f2;
+
+  /* Design Font */
+  --font_title: Tahoma, "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+  --font_paraf: Geneva, "Times New Roman", Times, serif;
+  --font_alt: "Franklin Gothic Medium", "Arial Narrow", Arial;
+
+  /* Font Color */
+  --font_color1: #d9d9d9;
+  --font_color2: #595959;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: fit-content;
+}
+
+/* Container Judul */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 23vh;
+  padding: 0.7em;
+}
+
+/* Container Content Judul */
+.welcome {
+  text-align: center;
+  width: 65vw;
+  padding: 1rem;
+  background-color: #0c688da6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 0 5px 2px #004763;
+  overflow: hidden;
+}
+
+/* Content Judul */
+.welcome > h2 {
+  color: var(--font_color1);
+  font-weight: bolder;
+  font-family: var(--font_title);
+  font-size: 1.7em;
+}
+
+/* Content Judul */
+.welcome > p {
+  color: var(--font_color1);
+  font-family: var(--font_paraf);
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+/* Halaman Utama */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  height: fit-content;
+}
+
+/* Container Halaman Utama */
+.main-page {
+  background-color: #f3f3f3;
+  box-shadow: 0 0 20px 2px black;
+  width: 75vw;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+  height: 200vh;
+}
+
+/* Container feature Luas Segitiga */
+.segitiga {
+  margin-top: 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Title Container luas segitiga */
+.judul-segitiga {
+  width: 80%;
+  background-color: var(--color2);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font_alt);
+  color: var(--font_color2);
+  padding: 0.8rem;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Content luas segitiga */
+.content-segitiga {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 80%;
+  margin-top: 20px;
+  padding: 2rem;
+  background-color: var(--color3);
+  border-radius: 25px;
+  gap: 6rem;
+}
+
+/* Content Rumus luas segitiga */
+.rumus-segitiga {
+  text-align: left;
+  font-size: 1.25em;
+  color: var(--font_color2);
+  padding-top: 15px;
+}
+
+.rumus-segitiga > h4 {
+  font-family: var(--font_alt);
+}
+
+.rumus-segitiga > p {
+  font-family: var(--font_paraf);
+  font-weight: 530;
+}
+
+/* Bagian Input Angka */
+form {
+  width: 80%;
+  margin: 20px;
+  font-family: var(--font_alt);
+  color: var(--font_color2);
+}
+
+#fitur-luas-segitiga,
+#fitur-keliling-segitiga {
+  border-radius: 10px;
+  border: 2px var(--color1) solid;
+  text-align: center;
+  padding: 10px;
+  line-height: 30px;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+label {
+  font-size: 1.25em;
+}
+
+input {
+  height: 2.5em;
+  width: 12rem;
+  margin: 15px 5px;
+  border: var(--color1) 1px solid;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 0.9em;
+  font-family: var(--font_paraf);
+}
+
+.hitung-segitiga,
+.reset-segitiga {
+  background-color: var(--color2);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-family: var(--font_alt);
+  margin: 15px 10px;
+  color: var(--font_color2);
+}
+
+/* Responsive Web Mini Laptop & Tablet */
+@media screen and (max-width: 1050px) {
+  header {
+    height: 25vh;
+  }
+
+  body {
+    background: var(--bg_res1);
+    background-attachment: fixed;
+  }
+
+  .welcome > h2 {
+    font-size: 1.3em;
+  }
+
+  .welcome > p {
+    font-size: 1em;
+  }
+
+  main {
+    height: fit-content;
+  }
+
+  .main-page {
+    height: 200vh;
+  }
+
+  .content-segitiga {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .rumus-segitiga {
+    font-size: 1em;
+    padding-top: 30px;
+  }
+
+  legend {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input {
+    height: 2.1em;
+    width: 8rem;
+  }
+
+  .hitung-segitiga,
+  .reset-segitiga {
+    padding: 5px 10px;
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive Web Handphone */
+@media screen and (max-width: 650px) {
+  header {
+    height: 30vh;
+  }
+
+  body {
+    background: var(--bg_res2);
+    background-attachment: fixed;
+  }
+
+  main {
+    height: fit-content;
+  }
+
+  .main-page {
+    height: 155vh;
+    width: 90vw;
+  }
+
+  .welcome {
+    width: 85vw;
+    padding: 0.8rem;
+  }
+
+  .welcome > h2 {
+    font-size: 1.15em;
+  }
+
+  .welcome > p {
+    font-size: 0.85em;
+  }
+
+  .judul-segitiga {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+
+  .content-segitiga {
+    gap: 1.3rem;
+    padding: 1rem;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  .rumus-segitiga {
+    font-size: 0.7em;
+    padding-top: 1px;
+  }
+
+  legend {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input {
+    height: 2.1em;
+    width: 6rem;
+  }
+
+  .hitung-segitiga,
+  .reset-segitiga {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+
+  .sisi-keliling {
+    width: 4.5rem;
+  }
+}
