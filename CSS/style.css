@@ -318,7 +318,7 @@ input::placeholder {
 
   input {
     height: 2.1em;
-    width: 6rem;
+    width: 3rem;
   }
 
   .hitung-segitiga,
@@ -328,6 +328,6 @@ input::placeholder {
   }
 
   .sisi-keliling {
-    width: 4.5rem;
+    width: 1.5rem;
   }
 }
