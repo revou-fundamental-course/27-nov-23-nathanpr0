@@ -152,6 +152,7 @@ form {
   color: var(--font_color2);
 }
 
+/* Fieldset Input */
 #fitur-luas-segitiga,
 #fitur-keliling-segitiga {
   border-radius: 10px;
@@ -186,6 +187,7 @@ input::placeholder {
   font-family: var(--font_paraf);
 }
 
+/* Button Hitung dan Reset pada Form */
 .hitung-segitiga,
 .reset-segitiga {
   background-color: var(--color2);
