@@ -254,6 +254,10 @@ input::placeholder {
     padding: 5px 10px;
     font-size: 1.4rem;
   }
+
+  .sisi-keliling {
+    width: 5rem;
+  }
 }
 
 /* Responsive Web Handphone */
@@ -318,7 +322,7 @@ input::placeholder {
 
   input {
     height: 2.1em;
-    width: 3rem;
+    width: 6rem;
   }
 
   .hitung-segitiga,
@@ -328,6 +332,6 @@ input::placeholder {
   }
 
   .sisi-keliling {
-    width: 1.5rem;
+    width: 4.5rem;
   }
 }
